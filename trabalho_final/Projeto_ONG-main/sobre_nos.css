@@ -1,0 +1,206 @@
+:root {
+    --amarelo: #f4d06f;
+    --laranja: #ff8811;
+    --verde: #9dd9d2;
+    --bege: #fff8f0;
+    --azul_marinho: #392f5a;
+}
+body{
+    background-color: (var(--bege));
+    background-image: url("img/nossa_equipe_cachorros.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.paragrafo_secundario_historia{
+    font-weight: 100;
+    font-size: 42px;
+    text-align: center;
+    color: var(--azul_marinho);
+    font-family: 'Encode Sans Expanded', sans-serif;
+
+}
+
+.div_salvos{
+    margin-top: 2%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.imagem_cachorros_salvos{
+    text-align: center;
+    width: 800px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+.card{
+    border-style: solid;
+    border-color: var(--azul_marinho);
+    background-color: var(--amarelo);
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 25px 20px 25px;
+    margin: 3% 0 5% 0;
+}
+.titulo__secundario{
+    color: var(--azul_marinho);
+    font-family: 'Playfair Display', serif;;
+}
+.colecao_cards{
+    display: flex;
+    justify-content: space-around;
+    margin-top:50px;
+    margin-bottom: 400px;
+}
+.card__paragrafo{
+    font-size: 18px;
+    font-family: 'Encode Sans Expanded', sans-serif;
+    text-align: justify;
+}
+.box__links{
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.div__links__uteis{
+    margin: 1%;
+    padding-bottom: 3%;
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+}
+.link_uteis{
+    text-decoration: none;
+    color: #392f5a;
+    font-size: 20px;
+    border-style: solid;
+    padding: 0.5%;
+    border-radius: 10px;
+}
+:hover.link_uteis{
+    background-color: var(--bege);
+    transition: background-color 1s ease, transform 0.5s ease
+}
+
+.menu-lateral {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--azul_marinho);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 70px; 
+    box-shadow: 3px 0 15px rgba(0, 0, 0, 0.3);
+    font-family: 'Encode Sans Expanded', sans-serif;
+}
+
+.menu-lateral .fechar {
+    position: absolute;
+    top: 1px;
+    right: 20px;
+    font-size: 25px;
+    color: var(--bege); 
+    background: none; 
+    border: none; 
+    cursor: pointer;
+    transition: color 0.3s;
+    z-index: 10; 
+}
+
+.menu-lateral a {
+    padding: 15px 20px;
+    text-decoration: none;
+    font-size: 20px;
+    color: var(--azul_marinho);
+    display: block;
+    margin: 10px 0;
+    background-color: var(--verde);
+    transition: 0.3s;
+    text-align: center;
+}
+.menu-lateral .fechar:hover {
+    color: var(--amarelo);
+}
+.menu-lateral a:hover {
+    background-color: var(--laranja);
+    color: var(--azul_marinho);
+    transform: scale(1.05);
+}
+footer {
+    background-color: var(--verde);
+    color: var(--azul_marinho);
+    padding: 1px 0; 
+    margin-top: 10px; 
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap; 
+    padding: 10px 0;
+    border-bottom: 3px solid #333;
+}
+
+.footer-info, .footer-img, .footer-social {
+    flex: 1;
+    padding: 5px; 
+    text-align: center; 
+}
+
+.footer-img img {
+    width: 105;
+    height: 100px;
+    border-radius: 8px;
+}
+
+.footer-social {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; 
+    gap: 8px; 
+    padding-right: 20px; 
+}
+
+.footer-social a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--azul_marinho);
+    text-decoration: none;
+    flex-direction: row-reverse; 
+    font-size: 22px;
+}
+
+.footer-icon {
+    width: 37px; 
+    height: 37px;
+    margin-left: 12px; 
+    transition: transform 0.3s;
+}
+
+.footer-social a:hover .footer-icon {
+    transform: scale(1.2);
+}
+
+.footer-bottom {
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: center;
+}
+.salvos_paragrafo{
+    font-size: 18px;
+    width: 800px;
+    text-align: justify;
+}
