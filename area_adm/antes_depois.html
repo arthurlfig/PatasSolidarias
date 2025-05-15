@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="antes_depois.css">
+    <title>Cadastro de animal</title>
+</head>
+<body>
+    <header>
+
+        <div class="titulo">PATAS SOLIDARIAS</div>
+    </header>
+
+    <h2>Cadastro de animal</h2>
+    
+    <form class="perguntas" action="antes_depois_cadastro.php" method="POST" enctype="multipart/form-data">
+        Nome: <input type="text" name="nome" id="txtName" class="caixinhas" required> <br>
+
+        Foto "Antes": <input type="file" name="foto_antes" id="foto" accept="image/*"> <br><br>
+
+        Foto "Depois": <input type="file" name="foto_depois" id="foto" accept="image/*"> <br>
+
+        Comentários: <input class="caixinhas" type="text" name="comentarios" size="30">
+
+        <input type="submit" class="cadastrar" name="submit" value="Enviar">
+    </form>
+</body>
+</html>

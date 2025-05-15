@@ -1,0 +1,123 @@
+/* Estilos básicos para o layout */
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@100;200;300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+:root {
+    --amarelo: #f4d06f;
+    --laranja: #ff8811;
+    --verde: #9dd9d2;
+    --bege: #fff8f0;
+    --azul_marinho: #392f5a;
+}
+
+body {
+    background-color: var(--bege);
+    margin: 0;
+    padding: 0;
+    color: var(--azul_marinho);
+}
+
+header {
+    display: flex;
+    background-color: var(--verde);
+    height: 120px;
+    padding: 0px;
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 35px;
+    font-family: 'Playfair Display';
+    color: var(--azul_marinho);
+}
+
+.link_menu {
+    font-size: 16px;
+    background-color: var(--verde);
+    text-decoration: none;
+    border: 1px solid var(--azul_marinho);
+    border-radius: 20px;
+    padding: 10px;
+    color: var(--azul_marinho);
+    transition: background-color 0.7s ease, transform 0.5s ease;
+}
+
+.link_menu:hover {
+    background-color: var(--bege);
+    color: var(--azul_marinho);
+}
+
+.titulo {
+    font-size: 28px;
+    font-style: normal;
+}
+
+.botao_hamburguer {
+    background-color: var(--verde);
+}
+
+h1 {
+    text-align: center;
+    font-family: "Montserrat";
+    color: var(--azul_marinho);
+}
+
+.animal-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.animal-card {
+    border: 2px solid var(--laranja);
+    border-radius: 8px;
+    width: 250px;
+    padding: 15px;
+    text-align: center;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    font-family: 'Montserrat';
+    color: var(--azul_marinho);
+}
+
+.animal-card h3 {
+    font-size: 20px;
+    color: var(--laranja);
+    margin-bottom: 10px;
+}
+
+.fotos {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+    justify-content: center;
+}
+
+.foto-antes,
+.foto-depois {
+    width: 48%;
+    border-radius: 8px;
+}
+
+.animal-card p {
+    font-size: 14px;
+    color: var(--azul_marinho);
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.animal-card a {
+    display: inline-block;
+    font-size: 14px;
+    text-decoration: none;
+    color: var(--bege);
+    background-color: var(--laranja);
+    padding: 8px 12px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.animal-card a:hover {
+    background-color: var(--amarelo);
+    color: var(--azul_marinho);
+}
